@@ -5,7 +5,7 @@ name: Trigger Python Create File Workflow
 on:
   schedule:
     # Run the workflow at 12:00 AM UTC every day
-    - cron: '*/2 * * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   python-job:
