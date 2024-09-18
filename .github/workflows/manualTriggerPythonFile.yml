@@ -3,13 +3,9 @@
 name: Trigger Python Create File Workflow
 
 on:
-  workflow_dispatch:
-    inputs:
-      name:
-        description: 'Python Create File'
-        default: 'World'
-        required: true
-        type: string
+  schedule:
+    # Run the workflow at 12:00 AM UTC every day
+    - cron: '*/2 * * * *'
 
 jobs:
   python-job:
